@@ -1,0 +1,199 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: scripts/login-test.js
+        output: json (results/output.json)
+
+     scenarios: (100.00%) 1 scenario, 60 max VUs, 1m30s max duration (incl. graceful stop):
+              * login_load: 20.00 iterations/s for 1m0s (maxVUs: 30-60, gracefulStop: 30s)
+
+
+running (0m01.0s), 17/30 VUs, 3 complete and 0 interrupted iterations
+login_load   [   2% ] 17/30 VUs  0m01.0s/1m0s  20.00 iters/s
+
+running (0m02.0s), 08/30 VUs, 32 complete and 0 interrupted iterations
+login_load   [   3% ] 08/30 VUs  0m02.0s/1m0s  20.00 iters/s
+
+running (0m03.0s), 08/30 VUs, 52 complete and 0 interrupted iterations
+login_load   [   5% ] 08/30 VUs  0m03.0s/1m0s  20.00 iters/s
+
+running (0m04.0s), 08/30 VUs, 72 complete and 0 interrupted iterations
+login_load   [   7% ] 08/30 VUs  0m04.0s/1m0s  20.00 iters/s
+
+running (0m05.0s), 08/30 VUs, 92 complete and 0 interrupted iterations
+login_load   [   8% ] 08/30 VUs  0m05.0s/1m0s  20.00 iters/s
+
+running (0m06.0s), 08/30 VUs, 112 complete and 0 interrupted iterations
+login_load   [  10% ] 08/30 VUs  0m06.0s/1m0s  20.00 iters/s
+
+running (0m07.0s), 08/30 VUs, 132 complete and 0 interrupted iterations
+login_load   [  12% ] 08/30 VUs  0m07.0s/1m0s  20.00 iters/s
+
+running (0m08.0s), 09/30 VUs, 151 complete and 0 interrupted iterations
+login_load   [  13% ] 09/30 VUs  0m08.0s/1m0s  20.00 iters/s
+
+running (0m09.0s), 08/30 VUs, 172 complete and 0 interrupted iterations
+login_load   [  15% ] 08/30 VUs  0m09.0s/1m0s  20.00 iters/s
+
+running (0m10.0s), 08/30 VUs, 192 complete and 0 interrupted iterations
+login_load   [  17% ] 08/30 VUs  0m10.0s/1m0s  20.00 iters/s
+
+running (0m11.0s), 08/30 VUs, 212 complete and 0 interrupted iterations
+login_load   [  18% ] 08/30 VUs  0m11.0s/1m0s  20.00 iters/s
+
+running (0m12.0s), 08/30 VUs, 232 complete and 0 interrupted iterations
+login_load   [  20% ] 08/30 VUs  0m12.0s/1m0s  20.00 iters/s
+
+running (0m13.0s), 08/30 VUs, 252 complete and 0 interrupted iterations
+login_load   [  22% ] 08/30 VUs  0m13.0s/1m0s  20.00 iters/s
+
+running (0m14.0s), 08/30 VUs, 272 complete and 0 interrupted iterations
+login_load   [  23% ] 08/30 VUs  0m14.0s/1m0s  20.00 iters/s
+
+running (0m15.0s), 08/30 VUs, 292 complete and 0 interrupted iterations
+login_load   [  25% ] 08/30 VUs  0m15.0s/1m0s  20.00 iters/s
+
+running (0m16.0s), 08/30 VUs, 312 complete and 0 interrupted iterations
+login_load   [  27% ] 08/30 VUs  0m16.0s/1m0s  20.00 iters/s
+
+running (0m17.0s), 08/30 VUs, 332 complete and 0 interrupted iterations
+login_load   [  28% ] 08/30 VUs  0m17.0s/1m0s  20.00 iters/s
+
+running (0m18.0s), 08/30 VUs, 352 complete and 0 interrupted iterations
+login_load   [  30% ] 08/30 VUs  0m18.0s/1m0s  20.00 iters/s
+
+running (0m19.0s), 08/30 VUs, 372 complete and 0 interrupted iterations
+login_load   [  32% ] 08/30 VUs  0m19.0s/1m0s  20.00 iters/s
+
+running (0m20.0s), 08/30 VUs, 392 complete and 0 interrupted iterations
+login_load   [  33% ] 08/30 VUs  0m20.0s/1m0s  20.00 iters/s
+
+running (0m21.0s), 09/30 VUs, 411 complete and 0 interrupted iterations
+login_load   [  35% ] 09/30 VUs  0m21.0s/1m0s  20.00 iters/s
+
+running (0m22.0s), 08/30 VUs, 432 complete and 0 interrupted iterations
+login_load   [  37% ] 08/30 VUs  0m22.0s/1m0s  20.00 iters/s
+
+running (0m23.0s), 08/30 VUs, 452 complete and 0 interrupted iterations
+login_load   [  38% ] 08/30 VUs  0m23.0s/1m0s  20.00 iters/s
+
+running (0m24.0s), 08/30 VUs, 472 complete and 0 interrupted iterations
+login_load   [  40% ] 08/30 VUs  0m24.0s/1m0s  20.00 iters/s
+
+running (0m25.0s), 08/30 VUs, 492 complete and 0 interrupted iterations
+login_load   [  42% ] 08/30 VUs  0m25.0s/1m0s  20.00 iters/s
+
+running (0m26.0s), 08/30 VUs, 512 complete and 0 interrupted iterations
+login_load   [  43% ] 08/30 VUs  0m26.0s/1m0s  20.00 iters/s
+
+running (0m27.0s), 08/30 VUs, 532 complete and 0 interrupted iterations
+login_load   [  45% ] 08/30 VUs  0m27.0s/1m0s  20.00 iters/s
+
+running (0m28.0s), 08/30 VUs, 552 complete and 0 interrupted iterations
+login_load   [  47% ] 08/30 VUs  0m28.0s/1m0s  20.00 iters/s
+
+running (0m29.0s), 08/30 VUs, 572 complete and 0 interrupted iterations
+login_load   [  48% ] 08/30 VUs  0m29.0s/1m0s  20.00 iters/s
+
+running (0m30.0s), 08/30 VUs, 592 complete and 0 interrupted iterations
+login_load   [  50% ] 08/30 VUs  0m30.0s/1m0s  20.00 iters/s
+
+running (0m31.0s), 08/30 VUs, 612 complete and 0 interrupted iterations
+login_load   [  52% ] 08/30 VUs  0m31.0s/1m0s  20.00 iters/s
+
+running (0m32.0s), 09/30 VUs, 631 complete and 0 interrupted iterations
+login_load   [  53% ] 09/30 VUs  0m32.0s/1m0s  20.00 iters/s
+
+running (0m33.0s), 08/30 VUs, 652 complete and 0 interrupted iterations
+login_load   [  55% ] 08/30 VUs  0m33.0s/1m0s  20.00 iters/s
+
+running (0m34.0s), 08/30 VUs, 672 complete and 0 interrupted iterations
+login_load   [  57% ] 08/30 VUs  0m34.0s/1m0s  20.00 iters/s
+
+running (0m35.0s), 08/30 VUs, 692 complete and 0 interrupted iterations
+login_load   [  58% ] 08/30 VUs  0m35.0s/1m0s  20.00 iters/s
+
+running (0m36.0s), 08/30 VUs, 712 complete and 0 interrupted iterations
+login_load   [  60% ] 08/30 VUs  0m36.0s/1m0s  20.00 iters/s
+
+running (0m37.0s), 08/30 VUs, 732 complete and 0 interrupted iterations
+login_load   [  62% ] 08/30 VUs  0m37.0s/1m0s  20.00 iters/s
+
+running (0m38.0s), 08/30 VUs, 752 complete and 0 interrupted iterations
+login_load   [  63% ] 08/30 VUs  0m38.0s/1m0s  20.00 iters/s
+
+running (0m39.0s), 08/30 VUs, 772 complete and 0 interrupted iterations
+login_load   [  65% ] 08/30 VUs  0m39.0s/1m0s  20.00 iters/s
+
+running (0m40.0s), 08/30 VUs, 792 complete and 0 interrupted iterations
+login_load   [  67% ] 08/30 VUs  0m40.0s/1m0s  20.00 iters/s
+
+running (0m41.0s), 08/30 VUs, 812 complete and 0 interrupted iterations
+login_load   [  68% ] 08/30 VUs  0m41.0s/1m0s  20.00 iters/s
+
+running (0m42.0s), 08/30 VUs, 832 complete and 0 interrupted iterations
+login_load   [  70% ] 08/30 VUs  0m42.0s/1m0s  20.00 iters/s
+
+running (0m43.0s), 08/30 VUs, 852 complete and 0 interrupted iterations
+login_load   [  72% ] 08/30 VUs  0m43.0s/1m0s  20.00 iters/s
+
+running (0m44.0s), 08/30 VUs, 872 complete and 0 interrupted iterations
+login_load   [  73% ] 08/30 VUs  0m44.0s/1m0s  20.00 iters/s
+
+running (0m45.0s), 08/30 VUs, 892 complete and 0 interrupted iterations
+login_load   [  75% ] 08/30 VUs  0m45.0s/1m0s  20.00 iters/s
+
+running (0m46.0s), 08/30 VUs, 912 complete and 0 interrupted iterations
+login_load   [  77% ] 08/30 VUs  0m46.0s/1m0s  20.00 iters/s
+
+running (0m47.0s), 08/30 VUs, 932 complete and 0 interrupted iterations
+login_load   [  78% ] 08/30 VUs  0m47.0s/1m0s  20.00 iters/s
+
+running (0m48.0s), 08/30 VUs, 952 complete and 0 interrupted iterations
+login_load   [  80% ] 08/30 VUs  0m48.0s/1m0s  20.00 iters/s
+
+running (0m49.0s), 08/30 VUs, 972 complete and 0 interrupted iterations
+login_load   [  82% ] 08/30 VUs  0m49.0s/1m0s  20.00 iters/s
+
+running (0m50.0s), 08/30 VUs, 992 complete and 0 interrupted iterations
+login_load   [  83% ] 08/30 VUs  0m50.0s/1m0s  20.00 iters/s
+
+running (0m51.0s), 08/30 VUs, 1012 complete and 0 interrupted iterations
+login_load   [  85% ] 08/30 VUs  0m51.0s/1m0s  20.00 iters/s
+
+running (0m52.0s), 08/30 VUs, 1032 complete and 0 interrupted iterations
+login_load   [  87% ] 08/30 VUs  0m52.0s/1m0s  20.00 iters/s
+
+running (0m53.0s), 08/30 VUs, 1052 complete and 0 interrupted iterations
+login_load   [  88% ] 08/30 VUs  0m53.0s/1m0s  20.00 iters/s
+
+running (0m54.0s), 08/30 VUs, 1072 complete and 0 interrupted iterations
+login_load   [  90% ] 08/30 VUs  0m54.0s/1m0s  20.00 iters/s
+
+running (0m55.0s), 08/30 VUs, 1092 complete and 0 interrupted iterations
+login_load   [  92% ] 08/30 VUs  0m55.0s/1m0s  20.00 iters/s
+
+running (0m56.0s), 08/30 VUs, 1112 complete and 0 interrupted iterations
+login_load   [  93% ] 08/30 VUs  0m56.0s/1m0s  20.00 iters/s
+
+running (0m57.0s), 08/30 VUs, 1132 complete and 0 interrupted iterations
+login_load   [  95% ] 08/30 VUs  0m57.0s/1m0s  20.00 iters/s
+
+running (0m58.0s), 09/30 VUs, 1151 complete and 0 interrupted iterations
+login_load   [  97% ] 09/30 VUs  0m58.0s/1m0s  20.00 iters/s
+
+running (0m59.0s), 08/30 VUs, 1172 complete and 0 interrupted iterations
+login_load   [  98% ] 08/30 VUs  0m59.0s/1m0s  20.00 iters/s
+
+running (1m00.0s), 09/30 VUs, 1191 complete and 0 interrupted iterations
+login_load   [ 100% ] 09/30 VUs  1m00.0s/1m0s  20.00 iters/s
+time="2026-03-30T14:09:50-03:00" level=info msg="[k6-reporter v3.0.4] Generating HTML summary report, with theme: default" source=console
+
+running (1m00.4s), 00/30 VUs, 1200 complete and 0 interrupted iterations
+login_load ✓ [ 100% ] 00/30 VUs  1m0s  20.00 iters/s
