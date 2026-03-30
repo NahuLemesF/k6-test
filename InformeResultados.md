@@ -1,6 +1,5 @@
 # Informe de Resultados — Prueba de Carga (Ejercicio 2)
 
-**Fecha de ejecución:** 2025-04-24
 **Duración:** aproximadamente 50 minutos (01:40:00 – 02:30:00)
 **Herramienta:** k6
 **Datos analizados:** textSummary.txt + diagrama de monitoreo VUs/http_reqs
@@ -36,9 +35,7 @@ El servicio pasó dos de los tres criterios, pero **el tiempo de respuesta super
 | p(95) — el 95% de requests tardó menos de... | **1570 ms** ← supera el límite |
 | Máximo | **29.93 segundos** |
 
-El tiempo máximo de 29 segundos es una señal clara de que hubo momentos donde el servidor no pudo responder a tiempo.
-
-Algo interesante: casi todo ese tiempo fue tiempo de espera a que el servidor respondiera. El tiempo de transmisión de red fue mínimo (menos de 1 ms). Esto indica que **el problema de rendimiento está en el servidor, no en la red**.
+El tiempo máximo de 29 segundos indica que hubo momentos donde el servidor no pudo responder a tiempo. Casi todo ese tiempo fue tiempo de espera a que el servidor respondiera. El tiempo de transmisión de red fue mínimo (menos de 1 ms). Esto indica que **el problema de rendimiento está en el servidor, no en la red**.
 
 ---
 
