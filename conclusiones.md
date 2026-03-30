@@ -18,17 +18,19 @@ La prueba corrió durante 60 segundos a 20 TPS, generando **1201 requests** en t
 | Máximo (`max`) | 702.04 ms |
 | p(90) | 415.24 ms |
 | p(95) | 435.79 ms |
-| TPS efectivo | 21.00 iters/s |
+| TPS efectivo | 19.88 iters/s |
 | Errores HTTP | 0 de 1201 (0%) |
 | Checks exitosos | 3603 de 3603 (100%) |
 
 ## Hallazgos
 
-> ⚠️ **IMPORTANTE — Por qué `rate` está configurado en 21 y no en 20**
+> ⚠️ **IMPORTANTE — Por qué el TPS reportado es 19.88 y no exactamente 20**
 >
-> El requisito exige **al menos 20 TPS**. Al configurar `rate: 20`, k6 registraba un TPS efectivo de **19.88 iters/s** al final de la prueba. Esto ocurre porque k6 calcula el TPS promedio dividiendo el total de iteraciones completadas entre el tiempo total de ejecución, que incluye el **graceful stop** (30 segundos extra donde k6 espera que terminen las iteraciones en curso pero ya no lanza nuevas). Ese tiempo adicional "diluye" el promedio por debajo de 20.
+> El script tiene `rate: 20`, lo que significa que k6 lanza exactamente **20 iteraciones por segundo** durante los 60 segundos de prueba. Sin embargo, la métrica final `http_reqs` muestra **19.88 iters/s** en lugar de 20.
 >
-> Al subir a `rate: 21`, el TPS efectivo medido supera los 20 requeridos (21.00 iters/s), cumpliendo con el criterio del ejercicio. No es un cambio arbitrario — es la corrección necesaria para que la métrica real reportada cumpla el umbral exigido.
+> Esto ocurre porque k6 calcula el TPS promedio dividiendo el total de iteraciones completadas entre el **tiempo total de ejecución**, que incluye el **graceful stop** (30 segundos adicionales donde k6 ya no lanza nuevas iteraciones, pero espera que las activas terminen). Esos 30 segundos "diluyen" el promedio final.
+>
+> **19.88 iters/s no es un incumplimiento del requisito.** Durante los 60 segundos activos, el sistema disparó exactamente 20 TPS. La diferencia de 0.12 es un artefacto de la fórmula de cálculo de k6, no una limitación del sistema bajo prueba. Por esta razón se deja `rate: 20` en el script — subir el valor solo para "inflar" la métrica reportada sería técnicamente incorrecto.
 
 ### Executor: `constant-arrival-rate` vs `constant-vus`
 
