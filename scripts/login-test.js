@@ -45,7 +45,7 @@ export default function () {
   const res = http.post('https://fakestoreapi.com/auth/login', payload, params);
 
   check(res, {
-    'status is 200': (r) => r.status === 200,
+    'status is 201': (r) => r.status === 201,
     'body is not empty': (r) => r.body !== null && r.body.length > 0,
     'token exists in response': (r) => {
       try {
