@@ -1,0 +1,9 @@
+# Resultados de pruebas de rendimiento
+
+Esta carpeta contiene la evidencia generada por las ejecuciones de k6:
+- Archivos JSON de salida (`*.json`)
+- Capturas de pantalla
+- Reportes HTML
+
+Los archivos de resultado están excluidos del repositorio via `.gitignore`.
+Para agregar evidencia puntual, hacerlo manualmente o anotar en `docs/results-analysis.md`.
