@@ -27,20 +27,6 @@ k6-test/
 
 1. Instalar k6: https://grafana.com/docs/k6/latest/set-up/install-k6/
 
-   **macOS (Homebrew):**
-   ```bash
-   brew install k6
-   ```
-
-   **Linux:**
-   ```bash
-   sudo gpg --no-default-keyring --keyring /usr/share/keyrings/k6-archive-keyring.gpg \
-     --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
-   echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" \
-     | sudo tee /etc/apt/sources.list.d/k6.list
-   sudo apt-get update && sudo apt-get install k6
-   ```
-
 2. Verificar instalación:
    ```bash
    k6 version
@@ -52,18 +38,13 @@ k6-test/
 k6 run scripts/login-test.js
 ```
 
-### Guardar resultados en JSON
+## Resultados de la última ejecución
 
-```bash
-k6 run --out json=results/output.json scripts/login-test.js
-```
-
-### Guardar resultados como reporte HTML (requiere k6-reporter)
-
-```bash
-k6 run --out json=results/output.json scripts/login-test.js \
-  && npx k6-html-reporter --inputPath results/output.json --outputPath results/report.html
-```
+| Archivo | Descripción |
+|---|---|
+| [results/report.html](results/report.html) | Reporte visual HTML |
+| [results/output.json](results/output.json) | Métricas raw en JSON |
+| [results/console-output.txt](results/console-output.txt) | Salida de consola |
 
 ## Criterios de aceptación (thresholds)
 
