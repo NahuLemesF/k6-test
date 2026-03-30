@@ -1,16 +1,26 @@
 # Conclusiones — Prueba de carga Login FakeStore
 
-## Resultados esperados
+## Resultados obtenidos
 
-La prueba corre durante 60 segundos a 20 TPS, generando aproximadamente **1200 requests** en total.
+La prueba corrió durante 60 segundos a 20 TPS, generando **1201 requests** en total.
 
-Los thresholds configurados son:
+| Threshold | Criterio | Resultado | Estado |
+|---|---|---|---|
+| `http_req_failed` | < 3% | 0.00% | ✅ PASS |
+| `http_req_duration` p(95) | < 1500 ms | 435.79 ms | ✅ PASS |
+| `checks` | > 97% | 100.00% | ✅ PASS |
 
-| Threshold | Criterio | Resultado esperado |
-|---|---|---|
-| `http_req_failed` | < 3% | PASS |
-| `http_req_duration` p(95) | < 1500 ms | PASS |
-| `checks` | > 97% | PASS |
+| Métrica HTTP | Valor |
+|---|---|
+| Promedio (`avg`) | 401.46 ms |
+| Mínimo (`min`) | 381.26 ms |
+| Mediana (`med`) | 394.44 ms |
+| Máximo (`max`) | 702.04 ms |
+| p(90) | 415.24 ms |
+| p(95) | 435.79 ms |
+| TPS efectivo | 19.89 iters/s |
+| Errores HTTP | 0 de 1201 (0%) |
+| Checks exitosos | 3603 de 3603 (100%) |
 
 ## Hallazgos
 
