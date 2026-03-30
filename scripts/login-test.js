@@ -31,8 +31,8 @@ export default function () {
   const user = users[__ITER % users.length];
 
   const payload = JSON.stringify({
-    username: user.username,
-    password: user.password,
+    username: user.user,
+    password: user.passwd,
   });
 
   const params = {
