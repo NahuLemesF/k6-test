@@ -1,7 +1,0 @@
-# Resultados k6 (ignorar archivos grandes generados)
-results/*.json
-results/*.html
-results/*.csv
-
-# Entorno
-.env
