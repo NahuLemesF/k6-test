@@ -2,13 +2,18 @@
 
 Prueba de carga sobre el endpoint de login de FakeStore API usando k6 con executor `constant-arrival-rate`.
 
+**Autor**: Nahuel Lemes
+
+---
+
 ## Tecnologías
 
 | Herramienta | Versión |
 |-------------|---------|
 | k6          | v0.55.0 |
-| Node.js     | no requerido (k6 corre standalone) |
 | papaparse   | 5.1.1 (via jslib.k6.io) |
+
+---
 
 ## Estructura
 
@@ -19,7 +24,7 @@ k6-test/
 ├── scripts/
 │   └── login-test.js      # script principal k6
 ├── results/               # carpeta para outputs (JSON, HTML)
-├── readme.md
+├── README.md
 └── conclusiones.md
 ```
 
@@ -43,6 +48,7 @@ k6 run scripts/login-test.js
 | Archivo | Descripción |
 |---|---|
 | [results/report.html](results/report.html) | Reporte visual HTML |
+| ![imagen de reporte](results/report.png) | Captura del reporte HTML |
 | [results/output.json](results/output.json) | Métricas raw en JSON |
 | [results/console-output.txt](results/console-output.txt) | Salida de consola |
 
@@ -55,6 +61,10 @@ k6 run scripts/login-test.js
 | `checks` | > 97% |
 
 Si alguno de estos umbrales no se cumple, k6 retorna exit code `1`.
+
+## Resultados obtenidos
+
+**Ver en [conclusiones.md](conclusiones.md).**
 
 ## Configuración del escenario
 
